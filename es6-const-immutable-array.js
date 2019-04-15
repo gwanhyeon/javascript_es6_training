@@ -14,7 +14,7 @@ kgh();
 
 const myhome = ['water', 'notebook', 'watermelon'];
 // [].concat 으로 cellphone을 추가시켜준다. 
-myhome_2 = [].concat(myhome,'cellphone');
+myhome_2 = [].concat(myhome,'cellphone');       // 새로운 공간을 만들어서 대입하는것. 참조 다르다.
 // immutable array => react redux reduce 사용할때 많이 씀.
 console.log(myhome === myhome_2);
 // false 반환 -> 값이 다르다

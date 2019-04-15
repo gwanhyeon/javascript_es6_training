@@ -17,7 +17,7 @@ forEach
 // 문제가 있음. -> 보통 Object타입을 순회를 많이 한다. 
 // array도 되긴 하지만, 상위의 값까지 결과에 포함 시킬 수 있음.
 //예를 들면 같은경우는 for in을 사용해서 출력할 경우 function() {};가 같이 출력된다.
-// 따라서 array에서는 사용하지 말것! 문제 야기!
+//todo 따라서 array에서는 사용하지 말것! 문제 야기!
 Array.prototype.getIndex = function() {};
 //for in 문
 for(let idx in data){
