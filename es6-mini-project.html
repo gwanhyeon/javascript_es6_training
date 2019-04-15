@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Ae</li>
+        <li>B</li>
+        <li>Ce</li>
+        <li>D</li>
+    </ul>
+</body>
+<script>
+/*
+filter, includes ,from을 사용해서 문자열 'e' 가 포함된 노드로 배열을 만들어서 반환하기
+
+*/
+function String_Check(){
+    // var list = document.querySelectorAll('li');
+    let data = document.querySelectorAll('li');
+    //tostringcall 타입 체크할때
+    console.log(toString.call(data));
+    let listdata = Array.from(data);        // li 노드로 구성된 배열
+    // filter는 Array만 가능하다.
+    let filterData = listdata.filter(function(value){
+        // value 는 하나하나의 노드이므로, innerText를 사용해서 도메인 속성 문자열 뽑아내야함.
+        return value.innerText.includes('e');
+    })
+    console.log(filterData.length);
+    // 2 출력 
+    return filterData;
+}
+    
+console.log(String_Check());
+//(2) [li, li] 값 노드로된 값이 반환된것을 알 수 있음.
+</script>
+</html>
