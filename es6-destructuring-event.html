@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, 
+        numquam sapiente! Provident odio perspiciatis delectus fugiat, quidem debitis, 
+        quia excepturi alias vero repudiandae cupiditate quos, dolor tempore deleniti 
+        vel error.</div>
+</body>
+<script>
+    // querySelector -> querySelectorall일 경우 에러가 나왔음 왜그런지는 모르겠음.
+    // document.querySelector("div").addEventListener("click", function (e) {
+    //     console.log(e.target);
+    // })
+
+    document.querySelector("div").addEventListener("click", function ({type,target}) {
+        console.log(type);
+        console.log(target.innerText);
+        console.log(target.tagName);
+    })
+</script>
+</html>

@@ -32,4 +32,12 @@ let obj = getObj();
 console.log('obj' ,obj);
 //todo { getName: [Function: getName], setName: [Function: setName] }
 console.log('obj.getName()',obj.getName());
-//todo
+
+// todo 좀더 간단하게 
+const data = {
+    name,
+    getName() {
+       // 이런식으로 사용해도 된다 
+    },
+    age
+}
