@@ -26,6 +26,12 @@ console.log(newArrArrow1)
 console.log(newArrArrow2)
 // map을 새로운 array생성 세개 모두다 [ 2, 4, 6, 8, 10 ]
 
-
+// const newArr = [1,2,3,4,5].map(function(value,index,object){
+//     return value*2;
+// })
+// const newArr = [1,2,3,4,5].map(v=>(v * 2));
+// const newArr = [1,2,3,4,5].map((v) => {
+//     return v*2;
+// })
 
 

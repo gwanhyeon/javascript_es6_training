@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>mydiv data</p>
+</body>
+<script>
+    // p 태그를 가져와서 myObj에 register를 참조해서 값을 뿌리준다.
+    const el = document.querySelector('p');
+    const myObj = {
+        
+
+        // todo 선언된것 기준으로 => this가 바인드가 된다는것을 주의하자
+        register() {
+            el.addEventListener("click",(evt) =>{
+                this.printData(evt.target); 
+            })
+        },
+        printData(el){
+        console.log('clicked!!',el.innerText);
+       }
+    }
+   
+   
+    myObj.register();
+
+</script>
+</html>
